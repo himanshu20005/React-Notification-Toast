@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/himanshu20005/React-Notification-Toast.git/static/css/main.ed36b4cd.css",
+    "main.js": "/himanshu20005/React-Notification-Toast.git/static/js/main.96d3a04f.js",
+    "static/js/787.492f914c.chunk.js": "/himanshu20005/React-Notification-Toast.git/static/js/787.492f914c.chunk.js",
+    "static/media/info.svg": "/himanshu20005/React-Notification-Toast.git/static/media/info.b6c887b0ecc2b6b16219aa7b0b99a91b.svg",
+    "index.html": "/himanshu20005/React-Notification-Toast.git/index.html",
+    "static/media/warning.svg": "/himanshu20005/React-Notification-Toast.git/static/media/warning.9bbdb2f304bf3510ffe2505f1db75dc9.svg",
+    "static/media/check.svg": "/himanshu20005/React-Notification-Toast.git/static/media/check.d639b7bb0ac3c4477b7b2334eca8819f.svg",
+    "static/media/error.svg": "/himanshu20005/React-Notification-Toast.git/static/media/error.f4c49f9a5c8aba2ee43a19348f4e68b3.svg",
+    "main.ed36b4cd.css.map": "/himanshu20005/React-Notification-Toast.git/static/css/main.ed36b4cd.css.map",
+    "main.96d3a04f.js.map": "/himanshu20005/React-Notification-Toast.git/static/js/main.96d3a04f.js.map",
+    "787.492f914c.chunk.js.map": "/himanshu20005/React-Notification-Toast.git/static/js/787.492f914c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed36b4cd.css",
+    "static/js/main.96d3a04f.js"
+  ]
+}
