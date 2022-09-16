@@ -13,6 +13,7 @@ function Homepage() {
   const [position, setPosition] = useState('Choose Notification Position');
   const [running, setRunning] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [delayDuration, setDelayDuration] = useState()
   let toastProperties = null;
 
   const handleClick = (type) => {
@@ -68,15 +69,23 @@ function Homepage() {
         <Button onClick={() => handleClick('warning')} type="warning">Warning</Button>
   ]
   
+  const handleDelayChange = (e) => {
+    setDelayDuration(e.target.value)
+  }
+
   return (
-    <>
+    <div className={styles.rootContainer}>
       <h1 className={styles.heading}>React Notification Bar Application</h1>
+      <div className={styles.mainContainer}>
+      <p className={styles.label}>Add notification autoclose duration (in ms)</p>
+      <input type="text" className={styles.durationTextfield} value={delayDuration} onChange={(e) => handleDelayChange(e)} placeholder="Example: 3000 ms"/>
       <div className={styles.buttonContainer}>
         {buttons}
       </div>
       <Dropdown position={position} setPosition={setPosition} />
-      <Toast notificationList={notificationList} position={position} setNotificationList={setNotificationList} progress={progress} setProgress={setProgress} running={running} setRunning={setRunning}/>
-    </>
+      </div>
+      <Toast notificationList={notificationList} position={position} delayDuration={delayDuration} setNotificationList={setNotificationList} progress={progress} setProgress={setProgress} running={running} setRunning={setRunning}/>
+    </div>
   );
 }
 

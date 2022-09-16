@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react'
 import styles from './Toast.module.css'
 import ProgressBar from '../ProgressBar/ProgressBar'
 
-const Toast = ({ notificationList, position, setNotificationList, progress, setProgress, running, setRunning }) => {
+const Toast = ({ notificationList, position, setNotificationList, progress, setProgress, running, setRunning, delayDuration }) => {
   
   let interval = undefined;
   const removeNotification = useCallback(id => {
@@ -32,7 +32,7 @@ const Toast = ({ notificationList, position, setNotificationList, progress, setP
       if (notificationList.length) {
         removeNotification(notificationList[0]?.id);
       }
-    }, 3000);
+    }, delayDuration || 3000);
 
     return () => {
       clearInterval(interval);
@@ -57,7 +57,7 @@ const Toast = ({ notificationList, position, setNotificationList, progress, setP
 
               <button onClick={() => removeNotification(notification?.id)} className={styles.cancelButton}><strong>x</strong></button>
             </div>
-            <ProgressBar progress="100" />
+            <ProgressBar progress="100" delayDuration={delayDuration}/>
           </div>
         ))
       }
