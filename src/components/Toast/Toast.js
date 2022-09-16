@@ -32,7 +32,7 @@ const Toast = ({ notificationList, position, setNotificationList, progress, setP
       if (notificationList.length) {
         removeNotification(notificationList[0].id);
       }
-    }, 3000000);
+    }, 3000);
 
     return () => {
       clearInterval(interval);
