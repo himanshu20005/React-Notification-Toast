@@ -30,7 +30,7 @@ const Toast = ({ notificationList, position, setNotificationList, progress, setP
   useEffect(() => {
     const interval = setInterval(() => {
       if (notificationList.length) {
-        removeNotification(notificationList[0].id);
+        removeNotification(notificationList[0]?.id);
       }
     }, 3000);
 
@@ -40,24 +40,24 @@ const Toast = ({ notificationList, position, setNotificationList, progress, setP
   }, [notificationList, removeNotification]);
 
   return (
-    <div className={`${styles.container} ${styles[position]}`}>
+    <div className={`${styles.toastContainer} ${styles[position]}`}>
       {
         notificationList?.map((notification) => (
           <div
-            className={`${styles.notification} ${styles.toast} `}
-            style={{ backgroundColor: notification.backgroundColor }}
+            className={`${styles.notificationBar} ${styles.toast} `}
+            style={{ backgroundColor: notification?.backgroundColor }}
           >
             <div className={styles.toastContent} >
-              <img src={notification.img} className={styles.logo} width="30px" height="30px" />
+              <img src={notification?.img} className={styles.logo} width="30px" height="30px" />
 
               <div className={styles.notificationInfo}>
-                <p className={styles.title}>{notification.title}</p>
-                <p className={styles.description}>{notification.description}</p>
+                <p className={styles.title}>{notification?.title}</p>
+                <p className={styles.description}>{notification?.description}</p>
               </div>
 
-              <button onClick={() => removeNotification(notification.id)} className={styles.cancelButton}><strong>x</strong></button>
+              <button onClick={() => removeNotification(notification?.id)} className={styles.cancelButton}><strong>x</strong></button>
             </div>
-            <ProgressBar done="100" color={notification.backgroundColor} />
+            <ProgressBar progress="100" />
           </div>
         ))
       }

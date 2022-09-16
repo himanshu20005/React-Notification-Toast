@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import styles from './ProgressBar.module.css'
-const ProgressBar = ({done, color}) => {
+const ProgressBar = ({progress}) => {
     const [showProgress, setShowProgress] = useState({})
     setTimeout(() => {
         const updateProgress = {
             opacity:1,
-            width: `${done}%`,
+            width: `${progress}%`,
         }
         setShowProgress(updateProgress)
     }, 10)
