@@ -1,0 +1,38 @@
+.button {
+    padding: 10px;
+    border: 0;
+    width: 150px;
+    border-radius: 3px;
+}
+
+.success {
+    background-color: #4bac59;
+}
+.success:hover {
+    background-color: #439A50;
+    transition: ease-in-out 0.5s;
+}
+
+.error {
+    background-color: #da4545;
+}
+.error:hover {
+    background-color: #C43E3E;
+    transition: ease-in-out 0.5s;
+}
+
+.info {
+    background-color: #3cb6d6;
+}
+.info:hover {
+    background-color: #36a3c0;
+    transition: ease-in-out 0.5s;
+}
+
+.warning {
+    background-color: #f1a04c;
+}
+.warning:hover {
+    background-color: #d89044;
+    transition: ease-in-out 0.5s;
+}

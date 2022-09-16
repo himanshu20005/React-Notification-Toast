@@ -1,0 +1,9 @@
+.heading {
+    color: white
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

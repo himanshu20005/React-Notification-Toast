@@ -1,0 +1,17 @@
+.progressBar {
+   background-color : rgba(0, 0, 0, 0.1) ;
+   height : 8px ;
+   width : 385px ;
+   border-top: 1px solid rgba(255, 255, 255, 0.0);
+
+}
+.progressCompleted {
+   background-color : rgba(255, 255, 255, 0.7) ;;
+   display : flex ;
+   opacity: 0;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width : 0;
+   transition: 3s ease;
+}
