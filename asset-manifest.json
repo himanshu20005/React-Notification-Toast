@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/React-Notification-Toast/static/css/main.ed36b4cd.css",
-    "main.js": "/React-Notification-Toast/static/js/main.a2597a5b.js",
+    "main.css": "/React-Notification-Toast/static/css/main.06339674.css",
+    "main.js": "/React-Notification-Toast/static/js/main.ea811263.js",
     "static/js/787.492f914c.chunk.js": "/React-Notification-Toast/static/js/787.492f914c.chunk.js",
     "static/media/info.svg": "/React-Notification-Toast/static/media/info.b6c887b0ecc2b6b16219aa7b0b99a91b.svg",
     "index.html": "/React-Notification-Toast/index.html",
     "static/media/warning.svg": "/React-Notification-Toast/static/media/warning.9bbdb2f304bf3510ffe2505f1db75dc9.svg",
     "static/media/check.svg": "/React-Notification-Toast/static/media/check.d639b7bb0ac3c4477b7b2334eca8819f.svg",
     "static/media/error.svg": "/React-Notification-Toast/static/media/error.f4c49f9a5c8aba2ee43a19348f4e68b3.svg",
-    "main.ed36b4cd.css.map": "/React-Notification-Toast/static/css/main.ed36b4cd.css.map",
-    "main.a2597a5b.js.map": "/React-Notification-Toast/static/js/main.a2597a5b.js.map",
+    "main.06339674.css.map": "/React-Notification-Toast/static/css/main.06339674.css.map",
+    "main.ea811263.js.map": "/React-Notification-Toast/static/js/main.ea811263.js.map",
     "787.492f914c.chunk.js.map": "/React-Notification-Toast/static/js/787.492f914c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed36b4cd.css",
-    "static/js/main.a2597a5b.js"
+    "static/css/main.06339674.css",
+    "static/js/main.ea811263.js"
   ]
 }
